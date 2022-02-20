@@ -49,6 +49,7 @@ const PrintResult = ({data, loadShow, setLoadShow, loading, setLoading}) => {
         <div># Click Add button and fill the input fields. </div>
         <div># Execute button will print an output.</div>
         <div># Result will be shown at this page.</div>
+
         <div>>></div>
         <br/>
         <div>job id | duration (seconds) | success | dependent job ids</div>
@@ -58,7 +59,7 @@ const PrintResult = ({data, loadShow, setLoadShow, loading, setLoading}) => {
         </div>
         <br/>
         <div>{loading}</div>      
-        {loading.length>17?
+        {loading.length>8?
             <Process process={data} />
         :''
         } 
